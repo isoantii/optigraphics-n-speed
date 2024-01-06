@@ -1,0 +1,15 @@
+while true do
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+
+    for _, otherPlayer in pairs(game.Players:GetPlayers()) do
+        if otherPlayer ~= player then
+            local otherCharacter = otherPlayer.Character
+            if otherCharacter then
+                otherCharacter:Destroy()
+            end
+        end
+    end
+
+    wait(15)
+end
