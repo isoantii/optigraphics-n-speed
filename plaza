@@ -1,0 +1,5 @@
+local allowedPlaceID = 15502339080
+
+if game.PlaceId == allowedPlaceID then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/isoantii/optigraphics-n-speed/main/opti"))()
+end
